@@ -1,0 +1,18 @@
+{{#each items}}
+    <h2>{{name}}</h2>
+
+    {{#if preview_url}}
+
+        <audio src="{{preview_url}}" type="audio/mpeg" controls>
+
+            <p>Play Track</p>
+            
+        </audio>
+
+    {{else}}
+
+        <p>No Preview AVailable</p>
+
+    {{/if}}
+    
+{{/each}}
